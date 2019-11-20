@@ -1,0 +1,44 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-only {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-and-tablet {
+  @media screen and (min-width: 1025px) {
+    display: none;
+  }
+}
+
+.desktop-only {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.desktop-and-tablet {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.tablet-only {
+  @media screen and (min-width: 1025px), (max-width: 767px) {
+    display: none;
+  }
+}

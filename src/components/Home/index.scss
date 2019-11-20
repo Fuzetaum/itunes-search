@@ -1,0 +1,52 @@
+#search-loading {
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+
+  &>.ant-card-body {
+    display: flex;
+    justify-content: center;
+
+    & i {
+      background-color: #32e662;
+    }
+  }
+}
+
+#search-card {
+  display: block;
+  width: 50%;
+  margin: 0 auto 1em;
+
+  &>.ant-card-body {
+    display: flex;
+    align-items: baseline;
+    padding: 1em;
+
+    &>span:first-of-type {
+      margin-right: 10px;
+    }
+
+    &>button {
+      margin-left: 10px;
+      background-color: #32e662;
+
+      &:hover, &:active, &:focus {
+        border-color: darken(#32e662, 10%);
+        color: #777;
+      }
+    }
+  }
+}
+
+#search-result-card {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+
+  &>.ant-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
